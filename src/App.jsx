@@ -85,27 +85,27 @@ function App() {
             `}
         />
         <Card
-      Titulo="O que são componentes?"
-      desc="Componentes são blocos reutilizáveis de código no React que representam partes da interface. Eles permitem dividir a tela em pedaços menores e organizados."
-      code={`function App() {
+          Titulo="O que são componentes?"
+          desc="Componentes são blocos reutilizáveis de código no React que representam partes da interface. Eles permitem dividir a tela em pedaços menores e organizados."
+          code={`function App() {
         return <h1>Olá React</h1>;
         }`}
-      /> 
-      <Card
-      Titulo="Criando um componente funcional"
-      desc="Um componente funcional é uma função JavaScript que retorna JSX . É a forma mais comum de criar componentes no React atualmente."
-      code={`function Saudacao() {
+        />
+        <Card
+          Titulo="Criando um componente funcional"
+          desc="Um componente funcional é uma função JavaScript que retorna JSX . É a forma mais comum de criar componentes no React atualmente."
+          code={`function Saudacao() {
         return <h2>Bem-vindo!</h2>;
         }
         
         function App() {
         return <Saudacao />;
         }`}
-      />
-      <Card
-      Titulo="Reutilização de componentes"
-      desc="A reutilização permite usar o mesmo componente várias vezes na aplicação. Isso torna o projeto mais organizado e fácil de manter."
-      code={`function Botao() {
+        />
+        <Card
+          Titulo="Reutilização de componentes"
+          desc="A reutilização permite usar o mesmo componente várias vezes na aplicação. Isso torna o projeto mais organizado e fácil de manter."
+          code={`function Botao() {
         return <button>Clique aqui</button>;
         }
 
@@ -118,11 +118,11 @@ function App() {
         </>
         );
         }`}
-      />
-      <Card
-      Titulo="Organização de componentes em pastas"
-      desc="Organizar componentes em pastas ajuda a manter o projeto fácil de entender. Cada componente pode ter seu próprio arquivo separado."
-      code={`// src/components/Card/Card.jsx
+        />
+        <Card
+          Titulo="Organização de componentes em pastas"
+          desc="Organizar componentes em pastas ajuda a manter o projeto fácil de entender. Cada componente pode ter seu próprio arquivo separado."
+          code={`// src/components/Card/Card.jsx
       // function Card() {
       // return <div>Meu Card</div>;
       }
@@ -133,10 +133,10 @@ function App() {
       function App() {
       return <Card />;
       }`}
-      />
+        />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
