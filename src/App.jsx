@@ -172,6 +172,35 @@ function App() {
       //Desmontagem
       useEffect(() => { return () => {console.log("Componente desmontado);};}, []);`}
         />
+
+        <Card
+          Titulo="O que é React"
+          desc="React é uma biblioteca JavaScript usada para criar interfaces de usuário. Ele permite dividir a aplicação em componentes reutilizáveis, facilitando a organização e manutenção do código."
+        />
+
+        <Card
+          Titulo="O que é Vite"
+          desc="Vite é uma ferramenta moderna de desenvolvimento frontend que permite criar e rodar projetos de forma rápida, com um servidor ágil e build otimizada."
+        />
+
+        <Card
+          Titulo="Criando um projeto React com Vite"
+          desc="Para criar um projeto, use o comando npm create vite@latest. Depois escolha React, entre na pasta do projeto, rode npm install e depois npm run dev para iniciar."
+        />
+        <Card
+          Titulo="Estrutura de pastas do projeto React"
+          desc="Um projeto possui pastas como public para arquivos estáticos e src para o código principal. Dentro de src ficam arquivos como App.jsx, main.jsx e estilos."
+        />
+
+        <Card
+          Titulo="Arquivo main.jsx"
+          desc="O main.jsx é o ponto de entrada da aplicação. Ele conecta o React ao HTML e renderiza o componente principal na tela."
+        />
+
+        <Card
+          Titulo="Arquivo App.jsx"
+          desc="O App.jsx é o componente principal da aplicação. Ele define o que será exibido na tela e organiza outros componentes."
+        />
       </div>
     </>
   );
