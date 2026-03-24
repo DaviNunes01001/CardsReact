@@ -12,6 +12,27 @@ function App() {
         />
 
         <Card
+          Titulo="Props com valores padrão"
+          desc="São valores definidos caso nenhuma prop seja passada. Evita erros e deixa o componente mais seguro."
+          code={`function Card({ titulo = "Título padrão" }) {
+  return <h1>{titulo}</h1>
+}`}
+        />
+
+        <Card
+          Titulo="Desestruturação de props"
+          desc="É quando você já separa as props direto nos parâmetros da função, deixando o código mais limpo e fácil de usar."
+          code={`function Card({ titulo, desc }) {
+  return (
+    <>
+      <h1>{titulo}</h1>
+      <p>{desc}</p>
+    </>
+  )
+}`}
+        />
+
+        <Card
           Titulo="O que é useState?"
           desc="O useState é um hook que permite adicionar estado a componentes no React. Ele retorna um valor atual e uma função para atualizá-lo, tornando possível controlar dados dinâmicos como cliques, inputs e exibição de elementos na interface."
           code={`
