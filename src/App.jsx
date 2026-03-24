@@ -154,7 +154,7 @@ function App() {
       function App() {
       return <Card />;
       }`}
-
+/>
       <Card
           Titulo="O que é JSX"
           desc="JSX é uma sintaxe que permite escrever HTML dentro do JavaScript. Ele é usado no React para criar interfaces de forma mais simples e visual."
