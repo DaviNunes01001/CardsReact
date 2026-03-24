@@ -12,6 +12,27 @@ function App() {
         />
 
         <Card
+          Titulo="Props com valores padrão"
+          desc="São valores definidos caso nenhuma prop seja passada. Evita erros e deixa o componente mais seguro."
+          code={`function Card({ titulo = "Título padrão" }) {
+  return <h1>{titulo}</h1>
+}`}
+        />
+
+        <Card
+          Titulo="Desestruturação de props"
+          desc="É quando você já separa as props direto nos parâmetros da função, deixando o código mais limpo e fácil de usar."
+          code={`function Card({ titulo, desc }) {
+  return (
+    <>
+      <h1>{titulo}</h1>
+      <p>{desc}</p>
+    </>
+  )
+}`}
+        />
+
+        <Card
           Titulo="O que é useState?"
           desc="O useState é um hook que permite adicionar estado a componentes no React. Ele retorna um valor atual e uma função para atualizá-lo, tornando possível controlar dados dinâmicos como cliques, inputs e exibição de elementos na interface."
           code={`
@@ -85,27 +106,27 @@ function App() {
             `}
         />
         <Card
-      Titulo="O que são componentes?"
-      desc="Componentes são blocos reutilizáveis de código no React que representam partes da interface. Eles permitem dividir a tela em pedaços menores e organizados."
-      code={`function App() {
+          Titulo="O que são componentes?"
+          desc="Componentes são blocos reutilizáveis de código no React que representam partes da interface. Eles permitem dividir a tela em pedaços menores e organizados."
+          code={`function App() {
         return <h1>Olá React</h1>;
         }`}
-      /> 
-      <Card
-      Titulo="Criando um componente funcional"
-      desc="Um componente funcional é uma função JavaScript que retorna JSX . É a forma mais comum de criar componentes no React atualmente."
-      code={`function Saudacao() {
+        />
+        <Card
+          Titulo="Criando um componente funcional"
+          desc="Um componente funcional é uma função JavaScript que retorna JSX . É a forma mais comum de criar componentes no React atualmente."
+          code={`function Saudacao() {
         return <h2>Bem-vindo!</h2>;
         }
         
         function App() {
         return <Saudacao />;
         }`}
-      />
-      <Card
-      Titulo="Reutilização de componentes"
-      desc="A reutilização permite usar o mesmo componente várias vezes na aplicação. Isso torna o projeto mais organizado e fácil de manter."
-      code={`function Botao() {
+        />
+        <Card
+          Titulo="Reutilização de componentes"
+          desc="A reutilização permite usar o mesmo componente várias vezes na aplicação. Isso torna o projeto mais organizado e fácil de manter."
+          code={`function Botao() {
         return <button>Clique aqui</button>;
         }
 
@@ -118,11 +139,11 @@ function App() {
         </>
         );
         }`}
-      />
-      <Card
-      Titulo="Organização de componentes em pastas"
-      desc="Organizar componentes em pastas ajuda a manter o projeto fácil de entender. Cada componente pode ter seu próprio arquivo separado."
-      code={`// src/components/Card/Card.jsx
+        />
+        <Card
+          Titulo="Organização de componentes em pastas"
+          desc="Organizar componentes em pastas ajuda a manter o projeto fácil de entender. Cada componente pode ter seu próprio arquivo separado."
+          code={`// src/components/Card/Card.jsx
       // function Card() {
       // return <div>Meu Card</div>;
       }
@@ -133,10 +154,10 @@ function App() {
       function App() {
       return <Card />;
       }`}
-      />
+        />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
