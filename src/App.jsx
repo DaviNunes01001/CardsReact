@@ -16,7 +16,7 @@ function App() {
       /> 
       <Card
       Titulo="Criando um componente funcional"
-      desc="Um componente funcional é uma função JavaScript que retorna JSX (HTML dentro do JS). É a forma mais comum de criar componentes no React atualmente."
+      desc="Um componente funcional é uma função JavaScript que retorna JSX . É a forma mais comum de criar componentes no React atualmente."
       code={`function Saudacao() {
         return <h2>Bem-vindo!</h2>;
         }
@@ -26,7 +26,7 @@ function App() {
       />
       <Card
       Titulo="Reutilização de componentes"
-      desc="A reutilização permite usar o mesmo componente várias vezes na aplicação, evitando repetir código. Isso torna o projeto mais organizado e fácil de manter."
+      desc="A reutilização permite usar o mesmo componente várias vezes na aplicação. Isso torna o projeto mais organizado e fácil de manter."
       code={`function Botao() {
         return <button>Clique aqui</button>;
         }
@@ -41,7 +41,7 @@ function App() {
       />
       <Card
       Titulo="Organização de componentes em pastas"
-      desc="Organizar componentes em pastas ajuda a manter o projeto limpo e fácil de entender. Cada componente pode ter sua própria pasta com arquivos separados."
+      desc="Organizar componentes em pastas ajuda a manter o projeto fácil de entender. Cada componente pode ter seu próprio arquivo separado."
       code={`// src/components/Card/Card.jsx
       // function Card() {
       // return <div>Meu Card</div>;
