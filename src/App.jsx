@@ -12,6 +12,12 @@ function App() {
         />
 
         <Card
+          Titulo="Passando props para componentes"
+          desc="É quando você envia dados de um componente pai para um componente filho através de atributos, permitindo reutilizar o componente com informações diferentes."
+          code={`<Card titulo="Meu título" desc="Minha descrição" />`}
+        />
+
+        <Card
           Titulo="Props com valores padrão"
           desc="São valores definidos caso nenhuma prop seja passada. Evita erros e deixa o componente mais seguro."
           code={`function Card({ titulo = "Título padrão" }) {
@@ -192,7 +198,6 @@ function App() {
   )
 }`}
         />
-      
       </div>
     </>
   );
