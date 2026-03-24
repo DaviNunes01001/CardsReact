@@ -1,16 +1,42 @@
+/* Reset básico e cores */
 * {
-  margin: 0px;
-  padding: 0px;
-  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
 
 body {
-  background-color: black;
+  background-color: #000;
+  font-family: Arial, sans-serif;
 }
 
 .Container {
-  column-width: 300px;
-  column-gap: 16px;
-  width: 100%;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-davi,
+.container-lucas,
+.container-migas,
+.container-gigi,
+.container-kaio,
+.container-matheus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
