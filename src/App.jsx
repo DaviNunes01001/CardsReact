@@ -154,6 +154,44 @@ function App() {
       function App() {
       return <Card />;
       }`}
+
+      <Card
+          Titulo="O que é JSX"
+          desc="JSX é uma sintaxe que permite escrever HTML dentro do JavaScript. Ele é usado no React para criar interfaces de forma mais simples e visual."
+          code={`function App() {
+  return <h1>Olá JSX</h1>
+}`}
+        />
+
+        <Card
+          Titulo="Diferença entre HTML e JSX"
+          desc="JSX é parecido com HTML, mas possui diferenças como o uso de className ao invés de class e a obrigatoriedade de fechar todas as tags."
+          code={`function App() {
+  return <div className="container"></div>
+}`}
+        />
+
+        <Card
+          Titulo="Expressões dentro do JSX {}"
+          desc="As chaves {} permitem usar JavaScript dentro do JSX, como variáveis, cálculos e funções."
+          code={`function App() {
+  const nome = "João"
+  return <h1>Olá {nome}</h1>
+}`}
+        />
+
+        <Card
+          Titulo="Fragment (<> </>)"
+          desc="Fragments permitem agrupar vários elementos sem adicionar uma div extra no HTML, deixando o código mais limpo."
+          code={`function App() {
+  return (
+    <>
+      <h1>Título</h1>
+      <p>Texto</p>
+    </>
+  )
+}`}
+        />
         />
       </div>
     </>
