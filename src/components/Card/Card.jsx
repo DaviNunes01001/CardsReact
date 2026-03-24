@@ -5,27 +5,23 @@ function Card({ Titulo, desc, code }) {
     <div className={styles["Card-container"]}>
       <div className={styles["Apple-buttons"]}>
         <div className={styles["bnt-apple"]}></div>
+
         <div className={styles["bnt-apple"]}></div>
+
         <div className={styles["bnt-apple"]}></div>
       </div>
+
       <div className={styles["Titulo-div"]}>
-        <pre>
-            <code><h2>{"<"}{Titulo}{"/>"}</h2></code>
-        </pre>
+        <h2>{Titulo}</h2>
       </div>
+
       <div className={styles["Div-Desc"]}>
-        
-            <pre>
-                <code>{"<"}{desc}{"/>"}</code>
-            </pre>
+        <p>{desc}</p>
       </div>
 
       <div className={styles["Div-code"]}>
-        <p className={styles["text-Exemplo"]}>Exemplo: </p>
         <pre>
-          <code>
-            <p className={styles["text-code"]}>{code}</p>
-          </code>
+          <code>{code}</code>
         </pre>
       </div>
     </div>
