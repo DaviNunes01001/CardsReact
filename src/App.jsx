@@ -155,72 +155,28 @@ function App() {
       return <Card />;
       }`}
         />
-
         <Card
-          Titulo="useEffect sem dependências"
-          desc="Executa o efeito em toda renderização do componente."
-          code={`useEffect(() => {console.log("Executa em toda renderização")})`}
-        />
+        Titulo="Renderização condicional"
+        desc="Permite mostrar ou esconder elementos na tela dependendo de uma condição. Muito usado com if, operador ternário (?) ou &&."
+        code={`{logado ? <Dashboard /> : <Login />}
 
-        <Card
-          Titulo="useEffect com array vazio"
-          desc="Executa o efeito apenas uma vez, quando o componente é montado."
-          code={`useEffect(() => {console.log("Executa apenas uma vez")}, [])`}
-        />
-
-        <Card
-          Titulo="useEffect com dependências"
-          desc="Executa o efeito quando o valor de count muda."
-          code={`useEffect(() => {console.log("Count mudou:", count)}, [count])`}
-        />
-
-        <Card
-          Titulo="useEffect com cleanup"
-          desc="Executa um efeito e limpa quando o componente é desmontado"
-          code={`useEffect(() => {const intervalo = setInterval(() => {console.log("Rodando);}, 1000);
-        return () => {clearInterval(intervalo);
-        console.log("Limpou)};}, []);`}
-        />
-
-        <Card
-          Titulo="Ciclo de vida completo"
-          desc="Simula montagem, atualização e desmontagem com múltiplos useEffect."
-          code={`//Montagem
-      useEffect(() => {console.log("Componente montado")}, []);
-      //Atualização
-      useEffect(() => {console.log("Componente atualizado:", count);}, [count]);
-      
-      //Desmontagem
-      useEffect(() => { return () => {console.log("Componente desmontado);};}, []);`}
-        />
-
-        <Card
-          Titulo="O que é React"
-          desc="React é uma biblioteca JavaScript usada para criar interfaces de usuário. Ele permite dividir a aplicação em componentes reutilizáveis, facilitando a organização e manutenção do código."
-        />
-
-        <Card
-          Titulo="O que é Vite"
-          desc="Vite é uma ferramenta moderna de desenvolvimento frontend que permite criar e rodar projetos de forma rápida, com um servidor ágil e build otimizada."
-        />
-
-        <Card
-          Titulo="Criando um projeto React com Vite"
-          desc="Para criar um projeto, use o comando npm create vite@latest. Depois escolha React, entre na pasta do projeto, rode npm install e depois npm run dev para iniciar."
+        {isAdmin && <PainelAdmin />}`}
         />
         <Card
-          Titulo="Estrutura de pastas do projeto React"
-          desc="Um projeto possui pastas como public para arquivos estáticos e src para o código principal. Dentro de src ficam arquivos como App.jsx, main.jsx e estilos."
-        />
+        Titulo="Listas com map()"
+        desc="Usamos o map() para percorrer arrays e renderizar vários componentes dinamicamente."
+        code={`const nomes = ["Ana", "Carlos", "João"];
+
+        {nomes.map((nome) => (
+
+        <p>{nome}</p> ))}`} />
 
         <Card
-          Titulo="Arquivo main.jsx"
-          desc="O main.jsx é o ponto de entrada da aplicação. Ele conecta o React ao HTML e renderiza o componente principal na tela."
-        />
+        Titulo="Propriedade key"
+        desc="A key ajuda o React a identificar cada item da lista, melhorando performance e evitando bugs na renderização."
+        code={`{nomes.map((nome, index) => (
 
-        <Card
-          Titulo="Arquivo App.jsx"
-          desc="O App.jsx é o componente principal da aplicação. Ele define o que será exibido na tela e organiza outros componentes."
+        <p key={index}>{nome}</p> ))}`} 
         />
       </div>
     </>
