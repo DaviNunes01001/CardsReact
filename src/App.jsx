@@ -161,6 +161,29 @@ function App() {
       return <Card />;
       }`}
         />
+        <Card
+        Titulo="Renderização condicional"
+        desc="Permite mostrar ou esconder elementos na tela dependendo de uma condição. Muito usado com if, operador ternário (?) ou &&."
+        code={`{logado ? <Dashboard /> : <Login />}
+
+        {isAdmin && <PainelAdmin />}`}
+        />
+        <Card
+        Titulo="Listas com map()"
+        desc="Usamos o map() para percorrer arrays e renderizar vários componentes dinamicamente."
+        code={`const nomes = ["Ana", "Carlos", "João"];
+
+        {nomes.map((nome) => (
+
+        <p>{nome}</p> ))}`} />
+
+        <Card
+        Titulo="Propriedade key"
+        desc="A key ajuda o React a identificar cada item da lista, melhorando performance e evitando bugs na renderização."
+        code={`{nomes.map((nome, index) => (
+
+        <p key={index}>{nome}</p> ))}`} 
+        />
 
         <Card
           Titulo="O que é JSX"
